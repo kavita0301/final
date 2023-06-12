@@ -1,0 +1,194 @@
+*
+{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+   
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('./mountain.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}   
+ nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .logo{
+font-size: 2em;
+letter-spacing: 2px;
+ }
+ .menu a{
+text-decoration: none;
+color: white;
+padding: 10px 20px;
+font-size: 20px;
+position: relative;
+}
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.menu a:hover:before{
+    width: 90%;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+    transition: 0.4s;
+    
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+.h-txt{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+.h-txt span{
+    letter-spacing: 5px;
+}
+.h-txt h1{
+    font-size: 3.5em;
+}
+.h-txt a{
+    text-decoration: none;
+    background:indianred ;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.h-txt a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+.cards{
+    width: 25%;
+    display: inline-block;
+    /* background-color:cadetblue; */
+    border-radius: 5px;
+    margin: 40px;
+    box-shadow: 2px 2px 10px black;
+
+}
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.title{
+    text-align: center;
+    padding: 5px;
+}
+.des{
+    text-align: center;
+    padding: 5px;
+}
+button{
+margin-top: 30px;
+margin-bottom: 30px;
+background-color: white;
+border: 1px solid black;
+padding: 5px;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    
+}
+
+
+
+img{
+    max-width: 320px;
+    float: left;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-right: 15px;
+
+
+}
+.footer-container{
+    background-color: #212329;
+    padding-bottom: 4rem;
+}
+
+.footer{
+width: 80%;
+height: 40vh;
+background-color: #212329;
+color: white;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: auto;
+}
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+
+}
+
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+}
+.footer-heading a{
+
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+.footer-heading a:hover{
+    color: red;
+    transition: 0.3s ease-out;
+}
+.footer-email-form h2{
+    margin-bottom: 2rem;
+}
+#footer-email::placeholder{
+    color: #b1b1b1;
+}
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #f9423d;
+}
+
+
+
+
+
+
+  
+  
+  
